@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slide2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <img src="../anh/nn.jpg" alt="logo"  height="55px" width="300px"> 
+                <div class="btn-header">
+                    <button type="button" class="buy"><i class="fas fa-shopping-cart"></i> Buy</button>
+                    <button type="button" class="shop"><i class="fas fa-sign-in-alt"></i> Login</button>               
+                </div>
+            </div>
+            <div class="row menu">
+                <h3>Welcome To The Pizza World Hut Hut !!! <i class="fas fa-pizza-slice"></i></h3> 
+                    <div class="row-1">
+                        <i class="fab fa-facebook-square">: Pizza Hut</i>
+                        <i class="fab fa-twitter">: #PizzaHut</i>
+                        <i class="fas fa-phone-volume"> Hotline:0935222820</i>
+                     </div>                
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="row-nav nav-bg">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#">Thực Đơn</a>
+            <a href="#">Ưu đãi</a>
+            <a href="#">Pizza</a>
+            <a href="#">Đồ Ăn Nhanh</a>
+            <a href="#">Nước giải khát</a>
+            <div class="form">
+                <input type="text" placeholder="Search..." >
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+        <div class="slider">
+            <div class="slide show" id="slide-1-content">
+                    <div class="content">
+                        
+                    </div>
+            </div>
+            <div class="slide" id="slide-2-content">
+                <div class="content">
+                    
+                </div>
+            </div>
+            <div class="slide" id="slide-3-content">
+                <div class="content">    
+                    
+                </div>
+            </div>
+        </div>  
+    </div>        
+    <div class="node">
+        <a href="#" id="slide-1" class="active">1</a>
+        <a href="#" id="slide-2">2</a>
+        <a href="#" id="slide-3">3</a>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        const node=document.querySelectorAll('.node a');
+         const slides=document.querySelectorAll('.slide');
+            function choseNode(e)
+            {
+                removeNode();
+                removeShow();
+                this.classList.add('active');
+
+                const cur = document.querySelector(`#${this.id}-content`);
+                cur.classList.add('show');
+            }
+            const removeShow=()=> {
+                slides.forEach(e => e.classList.remove('show'));
+            }
+
+            const removeNode=()=>
+            {
+                node.forEach(e => e.classList.remove('active'));
+            }
+
+        node.forEach(e=>e.addEventListener('click',choseNode));
+    </script>
+    <section class="bg-1">
+        <div class="container-1">
+            <div class="row-2">
+                <div class="box">
+                    <img src="../anh/pz1.jpg" alt="anh" width="150px" height="150px">
+                    <h1>PIZZA XÚC XÍCH THƯỢNG HẠNG</h1>
+                    <p>49.000đ</p>
+                    <button type="button" class="btn-sl">Orders</button>
+                </div>
+                <div class="box">
+                    <img src="../anh/pz2.jpg" alt="anh" width="150px" height="150px">
+                    <h1>PIZZA TÔM TÍT HẢI SẢN</h1>
+                    <p>100.000đ</p>
+                    <button type="button" class="btn-sl">Orders</button>
+                </div>
+                <div class="box">
+                    <img src="../anh/pz3.jpg" alt="anh" width="150px" height="150px">
+                    <h1>PIZZA THỰC CẨM NGON</h1>
+                    <p>100.000đ</p>
+                    <button type="button" class="btn-sl">Orders</button>
+                </div>
+                <div class="box">
+                    <img src="../anh/pz4.jpg" alt="anh" width="150px" height="150px">
+                    <h1>PIZZA GÀ PHÔ MAI BÉO</h1>
+                    <p>90.000đ </p>
+                    <button type="button" class="btn-sl">Orders</button>
+                </div>
+                <div class="box">
+                    <img src="../anh/pz4.jpg" alt="anh" width="150px" height="150px">
+                    <h1>MEATE LOVERS PIZZA 5 LOẠI</h1>
+                    <p>149.000đ </p>
+                    <button type="button" class="btn-sl">Orders</button>
+                </div>
+                <div class="box">
+                    <img src="../anh/pz4.jpg" alt="anh" width="150px" height="150px">
+                    <h1>PIZZA TRỨNG MUỐI CAY</h1>
+                    <p>429.000đ </p>
+                    <button type="button" class="btn-sl">Orders</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+    <div class="container-3">
+        <div class="bg-2">
+            <div class="his">
+                <h1>EAT TO PIZZA HUT <i class="fas fa-pizza-slice"></i></h1>
+            </div>     
+                <div class="row-3">
+                    <div class="box-1">
+                        <div class="row-3">
+                            <img src="../anh/icr.jpg" alt="anh" width="280px" height="180px">
+                            <div class="content-2">
+                                <p>KEM MATCHA</p>  
+                                <h3>50.000 đ</h3> 
+                                <button type="button">Xem</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="row-3">
+                            <img src="../anh/myy.jpg" alt="anh" width="280px" height="180px">
+                            <div class="content-2">
+                                <p>Mỳ Ý</p>  
+                                <h3>50.000 đ</h3> 
+                                <button type="button">Xem</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="row-3">
+                            <img src="../anh/ne.jpg" alt="anh" width="280px" height="180px">
+                            <div class="content-2">
+                                <p>Nước Trái Cây</p>  
+                                <h3>50.000 đ</h3> 
+                                <button type="button">Xem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+        </div> 
+    </div>
+
+    <div class="row-4">        
+        <div class="content-3">
+            <h1>MENU <i class="fas fa-bars"></i></h1>
+             <div class="content-3-1">
+                <a href="#" class="pi">PIZZA</a></br>
+                <a href="#" class="pi">Mỳ Ý</a></br>
+                <a href="#" class="pi">Nước Giải Khát</a></br>
+                <a href="#" class="pi">Kem</a></br>
+                <a href="#" class="pi">Đồ ăn vặt</a></br>
+                <a href="#" class="pi">Orders</a></br>
+             </div>
+        </div>
+        <div class="content-4">
+            <h1>PRODUCT PIZZA</h1>
+            <div class="row-5">
+                <div class="box-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YLNO5GuAKXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="content-5">
+            <h1>Giờ mở cửa PIZZAHUT: </h1></br>
+            <p>Sáng: 7h đến 12h</p></br>
+            <p>Chiều:12h đến 22h</p></br>
+            <p>HÂN HẠNH ĐƯỢC PHỤC KHÁCH</p></br>
+            <p>HOTLINE:0935222820</p>
+        </div>        
+    </div>
+
+    </section>       
+    <footer>
+        <div class="row-6">
+                <div class="for-1">
+                    <h1>PIZZAHUT</h1></br>
+                    <span>
+                        Địa chỉ: 100 Trần Hưng Đạo - TP Huế </br>
+                        HOT-LINE: 0935222820</br>
+                        Email Phản hồi : pizzahut@gmai.com
+                    </span>
+                </div>
+                <div class="for-1">
+                    <h1>Về chúng tôi</h1></br>
+                    <a href="#">Về giới thiệu</a></br>
+                    <a href="#">Tầm nhìn</a></br>
+                    <a href="#">Giá trị cốt lõi</a></br>
+                    <a href="#">Vệ sinh an toàn</a></br>
+                </div>
+                <div class="for-1">
+                    <h1>Tìm cửa hàng</h1></br>
+                    <a href="#">Miền Bắc</a></br>
+                    <a href="#">Miền Trung</a></br>
+                    <a href="#">Miền Nam</a></br>
+                </div>
+                <div class="for-1">
+                    <h1>Thông tin tuyển dụng</h1></br>
+                    <a href="#">Làm việc tại Pizza Hut</a></br>
+                    <a href="#">Môi trường làm việc</a></br>
+                    <a href="#">Cơ hội phát triển nghề nghiệp</a></br>
+                </div>
+                <div class="for-1">
+                    <h1>Thông tin Liên hệ</h1></br>
+                    <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></br>
+                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></br>
+                    <a href="#"><i class="fab fa-youtube"></i> Youtube</a></br>
+                </div>   
+        </div>
+    </footer>
+</body>
+</html>
